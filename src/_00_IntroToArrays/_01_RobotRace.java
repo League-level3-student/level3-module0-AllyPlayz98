@@ -28,19 +28,20 @@ robotArray[i].setY(500);
     	while (b==false) {
     	for (int i = 0; i < robotArray.length; i++) {
 			int g = r.nextInt(100);
-			robotArray[i].move(g );
+			robotArray[i].move(g);
 			if (robotArray[i].getY()<=0) {
 				b = true;
+			}
+			if (robotArray[i].getY() <= 0) {
+				System.out.println(robotArray[i] + "won!! congrats :)");
 			}
 		}
 		//6. use a while loop to repeat step 5 until a robot has reached the top of the screen.
     	
 	
-}
+    	}
 		//7. declare that robot the winner and throw it a party!
-    	if (b = true) {
-			System.out.println(robotArray[i] + "won!! congrats :)");
-		}
+    	
 		//8. try different races with different amounts of robots.
     	
 	    //9. make the robots race around a circular track.
